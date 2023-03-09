@@ -41,3 +41,10 @@
     </li>
 </ol>
 </p>
+<h2>Inheritance</h2>
+<p>Make a class (Sub Class) inherit from another class called (Super Class) using "extends" keyword.</p>
+<p>Used to avoid redundancy and avoid duplication</p>
+<p>No multiple inheritance in JAVA</p>
+<p>Within a package, a sub class can access all non-private members of super class.</p>
+<p>Outside package, only public and protected members could be accessed by a sub class.</p>
+<p>Use "final" keyword to prevent method overriding</p>
