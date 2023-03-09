@@ -15,6 +15,7 @@
 </ul>
 <h2>Loops</h2>
 <p>While(booleanExpression){ statement(s) }</p>
+<p>do{ statement(s) } While(Boolean Expression);
 <p>For(int index=0; index < 20; index++){ statement(s) }</p>
 <p><b style="color:red">Break</b> statement is used to breal from an enclosing <u>for</u>, <u>while</u>, <u>do</u> and switch statement</p>
 <p><b style="color:red">Continue</b> statement is like Break but it stops only the execution of current statement and causes control to return to next iteration</p>
