@@ -45,6 +45,39 @@ public class MyFirstJavaProgram {
         byte b = 31;
         System.out.println("Left shift of b results is: "+(b<<2));
         System.out.println("Right shift of b results is: "+(b>>2));
+
+        int index = 10;
+        //While loop
+        while(index < 15){
+            System.out.println("Inside while: "+index);
+            index++;
+        }
+
+        //for loop
+        for(int k=0; k<10 ;k++){
+            System.out.println("Index: "+k);
+        }
+
+        int s=1;
+        for( ; ; ){
+            System.out.println("S= "+s);
+            s++;
+
+            if(s>4) break;
+        }
+
+        //continue
+        test: for(int m=0;m<3;m++){
+           for(int j=0; j<3;j++){
+                if(j==2){
+                    continue test;
+                }
+
+                System.out.println(j+" is the value of j");
+           }
+
+           System.out.println(m+" is the value of m");
+        }
     }
     
 }
