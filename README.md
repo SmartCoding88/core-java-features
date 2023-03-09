@@ -48,3 +48,22 @@
 <p>Within a package, a sub class can access all non-private members of super class.</p>
 <p>Outside package, only public and protected members could be accessed by a sub class.</p>
 <p>Use "final" keyword to prevent method overriding</p>
+<h2>Exception Handling</h2>
+<ul>
+    <li>java.lang.Exception object encapsulates the error conditions and throws it back to the running code</li>
+    <li>Sub class of Throwable</li>
+    <li>Class "Error" denotes the fatal error</li>
+    <li>Class "Exception" denotes non-fatal errors</li>
+    <li>
+    <pre>
+    try{
+        //statements
+    }catch(Exception e){
+        //statements to handle exception
+    }finally{ //optional
+        //statements to handle exception & cleanup
+    }
+    </pre>
+    </li>
+    <li>Create your own exception class by extending Exception class</li>
+</ul>
