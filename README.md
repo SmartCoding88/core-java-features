@@ -68,7 +68,7 @@
     <li>Create your own exception class by extending Exception class</li>
 </ul>
 <h3>List of Runtime Exceptions in JAVA</h3>
-<ol class="default-list"> 
+<ol> 
   <li>ArithmeticException</li> 
   <li>NullPointerException</li> 
   <li>ClassCastException</li> 
@@ -80,3 +80,36 @@
   <li>NoSuchElementException</li> 
   <li>ConcurrentModificationException</li> 
  </ol>
+ <h2>Interface</h2>
+ <p>It is a mechanism by which Java somewhat achieves multiple inheriatnce</p>
+ <p>Use of "implements" keyword</p>
+ <p>"Abstract" => existing in thought or as an idea but not having a physical or concrete existance.</p>
+ <p>A class which is declared abstract can't be instantiated, but only subclassed.</p> 
+ <h2>Interface vs Abstract class</h2>
+ <table width="100%">
+ <tr>
+    <th>Interface</th>
+    <th>Abstract Class</th>
+ </tr>
+ <tr>
+    <td>Contains only the method signature</td>
+    <td>May have some of its methods implemented</td>
+ </tr>
+ <tr>
+    <td>All methods are implicitly public</td>
+    <td>Methods can be protedted as well</td>
+ </tr>
+ <tr>
+    <td>All attributes are public, static and final</td>
+    <td>Can have attributes with other modifiers</td>
+ </tr>
+ <tr>
+    <td>Can extend multiple interfaces</td>
+    <td>Can't be extended from more than one abstract class</td>
+ </tr>
+ <tr>
+    <td>Does not have a constructor</td>
+    <td>Can have a constructor</td>
+ </tr>
+ </table>
+
