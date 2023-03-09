@@ -19,3 +19,25 @@
 <p>For(int index=0; index < 20; index++){ statement(s) }</p>
 <p><b style="color:red">Break</b> statement is used to breal from an enclosing <u>for</u>, <u>while</u>, <u>do</u> and switch statement</p>
 <p><b style="color:red">Continue</b> statement is like Break but it stops only the execution of current statement and causes control to return to next iteration</p>
+<h2>Encapsulation</h2>
+<p>It is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. </p>
+<h2>Access Control modifiers</h2>
+<ul>
+    <li>Public</li>
+    <li>Private</li>
+    <li>Protected</li>
+    <li>Default</li>
+</ul>
+<p>Static members are class level members. <br/> They don't need an already existing object to be used.</p>
+<h2>Method Overloading</h2>
+<p>Same method names in a class having different arguments. <br/>
+<strong>Examples:</strong>
+<ol>
+    <li>
+    public double calculatePerimeter(float width, float height){ return (width+height)*2; }
+    </li>
+    <li>
+    public double calculatePerimeter(float width){ return width*4; }
+    </li>
+</ol>
+</p>
