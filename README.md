@@ -67,3 +67,16 @@
     </li>
     <li>Create your own exception class by extending Exception class</li>
 </ul>
+<h3>List of Runtime Exceptions in JAVA</h3>
+<ol class="default-list"> 
+  <li>ArithmeticException</li> 
+  <li>NullPointerException</li> 
+  <li>ClassCastException</li> 
+  <li>DateTimeException</li> 
+  <li>ArrayIndexOutOfBoundsException</li> 
+  <li>NegativeArraySizeException</li> 
+  <li>ArrayStoreException</li> 
+  <li>UnsupportedOperationException</li> 
+  <li>NoSuchElementException</li> 
+  <li>ConcurrentModificationException</li> 
+ </ol>
