@@ -112,4 +112,11 @@
     <td>Can have a constructor</td>
  </tr>
  </table>
-
+<h2>Nested Class</h2>
+<p>A class defined within a class or interface is known as a nested class</p>
+<p>Types:</p>
+<ol>
+    <li>Non static nested class</li>
+    <li>Static nested class</li>
+</ol>
+<p>Each inner class can extend from its own parent class, irrespective of outer class extending it.</p>
