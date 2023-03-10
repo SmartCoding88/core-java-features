@@ -120,3 +120,66 @@
     <li>Static nested class</li>
 </ol>
 <p>Each inner class can extend from its own parent class, irrespective of outer class extending it.</p>
+<h2>Threads</h2>
+<p>Threads allows a program to operate more efficiently by doing multiple things at the same time.</p>
+<p>There are two ways to create a thread.<br/>
+<ol>
+<li>It can be created by extending the Thread class and overriding its run() method:<br/>
+<pre>
+public class Main extends Thread {
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+</pre>
+</li>
+
+<li>
+Another way to create a thread is to implement the Runnable interface:<br/>
+<pre>
+public class Main implements Runnable {
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+</pre>
+</li>
+</ol>
+<h3>Running Threads</h3>
+<p>If the class extends the Thread class, the thread can be run by creating an instance of the class and call its start() method:</p>
+<pre>
+public class Main extends Thread {
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+</pre>
+<h3>Synchronization</h3>
+<p>Synchronized methods prevent more than one thread from accessing critical method code simultaneously</p>
+<p>We make use of the keyword <b>"Synchronized"</b> for making a method or a block of code synchronized</p>
+<pre>
+public class Main extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    // Wait for the thread to finish
+    while(thread.isAlive()) {
+    System.out.println("Waiting...");
+  }
+  // Update amount and print its value
+  System.out.println("Main: " + amount);
+  amount++;
+  System.out.println("Main: " + amount);
+  }
+  public void run() {
+    amount++;
+  }
+}
+</pre>
