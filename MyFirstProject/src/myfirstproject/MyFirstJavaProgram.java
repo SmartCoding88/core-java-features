@@ -3,81 +3,39 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package myfirstproject;
+import java.lang.*;
 
 /**
  *
  * @author khouloud
  */
-public class MyFirstJavaProgram {
+public class MyFirstJavaProgram implements Comparable{
 
+    int empId;
+    String empName;
+
+    MyFirstJavaProgram(int empId, String empName){
+        super();
+        this.empId = empId;
+        this.empName = empName;
+    }
+
+    public int compareTo(Object o){
+        if(o instanceof MyFirstJavaProgram){
+            MyFirstJavaProgram e = (MyFirstJavaProgram)o;
+            
+            return this.empId - e.empId;
+        }else{
+            throw new ClassCastException("Passed object is not of type MyFirstJavaProgram");
+        }
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        int intVal;
-        String strVal;
-        
-        intVal = 10; //assign 10 to variable intVal
-        strVal = "Assign string value";
-        System.out.println("---Increment & decrement oprators---");
-        
-        int a=10;
-        System.out.println("--current calue of a is: "+a);
-        System.out.println("a after a++ becomes : "+(a++));
-        System.out.println("--current calue of a is: "+a);
-        System.out.println("a after a-- becomes : "+(a--));
-        System.out.println("--current calue of a is: "+a);
-        System.out.println("a after ++a becomes : "+(++a));
-        System.out.println("--current calue of a is: "+a);
-        System.out.println("a after --a becomes : "+(--a));
-        System.out.println("--current calue of a is: "+a);
-        
-        System.out.println("---Logical complement oprators---");
-        boolean isCorrect = false;
-        System.out.println("isCoorect's value of now is: "+(!isCorrect));
-        
-        //ternary demo
-        int i=10;
-        // a=5;
-        System.out.println("ternary operation "+(i==10 ? i: 0));
-        
-        byte b = 31;
-        System.out.println("Left shift of b results is: "+(b<<2));
-        System.out.println("Right shift of b results is: "+(b>>2));
-
-        int index = 10;
-        //While loop
-        while(index < 15){
-            System.out.println("Inside while: "+index);
-            index++;
-        }
-
-        //for loop
-        for(int k=0; k<10 ;k++){
-            System.out.println("Index: "+k);
-        }
-
-        int s=1;
-        for( ; ; ){
-            System.out.println("S= "+s);
-            s++;
-
-            if(s>4) break;
-        }
-
-        //continue
-        test: for(int m=0;m<3;m++){
-           for(int j=0; j<3;j++){
-                if(j==2){
-                    continue test;
-                }
-
-                System.out.println(j+" is the value of j");
-           }
-
-           System.out.println(m+" is the value of m");
-        }
+        MyFirstJavaProgram emp1 = new MyFirstJavaProgram(3,"Employee1");
+        MyFirstJavaProgram emp2 = new MyFirstJavaProgram(1,"Employee2");
+        System.out.println("CompareTo Result: "+emp1.compareTo(emp2));
     }
     
 }

@@ -164,22 +164,30 @@ public class Main extends Thread {
 <p>We make use of the keyword <b>"Synchronized"</b> for making a method or a block of code synchronized</p>
 <pre>
 public class Main extends Thread {
-  public static int amount = 0;
+    public static int amount = 0;
 
-  public static void main(String[] args) {
-    Main thread = new Main();
-    thread.start();
-    // Wait for the thread to finish
-    while(thread.isAlive()) {
-    System.out.println("Waiting...");
-  }
-  // Update amount and print its value
-  System.out.println("Main: " + amount);
-  amount++;
-  System.out.println("Main: " + amount);
-  }
-  public void run() {
+    public static void main(String[] args) {
+        Main thread = new Main();
+        thread.start();
+        // Wait for the thread to finish
+        while(thread.isAlive()) {
+        System.out.println("Waiting...");
+    }
+    // Update amount and print its value
+    System.out.println("Main: " + amount);
     amount++;
-  }
+    System.out.println("Main: " + amount);
+    }
+    public void run() {
+        amount++;
+    }
 }
 </pre>
+<h2>Collections Framework</h2>
+<p>Set of interfaces and utility classes used for storing, searching and arranging objects.</p>
+<ol>
+<li>Lists: ordered collection of objects allowing duplicates.</li>
+<li>Sets: list of <b>unique objects</b></li>
+<li>Maps: contains objects as key-value pair. The keys are unique but values can be duplicated.</li>
+<li>Queues: kepps elements in FIFO order (add(), remove(), poll(), peek()...)</li>
+</ol>
