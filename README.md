@@ -190,3 +190,8 @@ public class Main extends Thread {
 <li>Maps: contains objects as key-value pair. The keys are unique but values can be duplicated.</li>
 <li>Queues: keeps elements in FIFO order (add(), remove(), poll(), peek()...)</li>
 </ol>
+<h2>Java Generics</h2>
+<p>Java generics was introduced in JAVA 5 to deal with type-safe objects.</p>
+<h2>JDBC</h2>
+<p>Java Data Base Connectivity is an API for accessing and updating the databse</p>
+<p>4 types of drivers: <a href="https://www.javatpoint.com/jdbc-driver" target="_blank">read more...</p>

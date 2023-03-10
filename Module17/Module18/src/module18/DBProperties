@@ -1,0 +1,4 @@
+DBDriver=oracle.jdbc.driver.OracleDriver
+DBName=jdbc:oracle:thin:@indl76079.in.oracle.com:1522:in76079
+User=scott
+Password= tiger
