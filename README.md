@@ -181,13 +181,12 @@ public class Main extends Thread {
     public void run() {
         amount++;
     }
-}
-</pre>
+}</pre>
 <h2>Collections Framework</h2>
 <p>Set of interfaces and utility classes used for storing, searching and arranging objects.</p>
 <ol>
 <li>Lists: ordered collection of objects allowing duplicates.</li>
 <li>Sets: list of <b>unique objects</b></li>
 <li>Maps: contains objects as key-value pair. The keys are unique but values can be duplicated.</li>
-<li>Queues: kepps elements in FIFO order (add(), remove(), poll(), peek()...)</li>
+<li>Queues: keeps elements in FIFO order (add(), remove(), poll(), peek()...)</li>
 </ol>
